@@ -65,6 +65,7 @@ describe('Enqueuing, Dequeuing and measuring size', function(){
 		q.enqueue('str1').enqueue('str2').enqueue('str3').enqueue('str4').enqueue('str5');
 		q.enqueue('str6').enqueue('str7').enqueue('str8').enqueue('str9').enqueue('str10');
 		assert.equal(13,q.size());
+		console.log(q.toString(true));
 	});
 	it('The last dequeued element after 4 dequeues should be <str1>', function(){
 		q.dequeue();

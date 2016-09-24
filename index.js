@@ -87,7 +87,7 @@ function Queue(){
 					str += _data[i];
 					break;
 			}
-			str += "]" + (i===_size-1?" <-- DEQUEUE\n":(i===0?" <-- ENQUEUE":"\n"));
+			str += "]" + (i===_size-1?" <-- ENQUEUE\n":(i===0?" <-- DEQUEUE":"\n"));
 		}
 		return str;
 	};
